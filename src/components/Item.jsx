@@ -6,7 +6,7 @@ const Item = ({item}) => {
     return (
         <div className='foodItem'>
             <div className='foodImg'>
-                <img src={img} />
+                <img src={img} alt={title} />
             </div>
             <div className='foodInfo'>
                 <div>
