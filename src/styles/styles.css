@@ -1,0 +1,266 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+main,
+article,
+aside,
+figure,
+footer,
+header,
+nav,
+section,
+details,
+summary {
+  display: block;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+/* 
+Helps with img scaling, might have an issue if no make embed
+*/
+img,
+object,
+embed {
+  max-width: 100%;
+  height: auto;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+blockquote::before, blockquote::after,
+q::before,
+q::after {
+  content: "";
+  content: none;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted #222;
+  cursor: help;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+th {
+  font-weight: bold;
+  vertical-align: bottom;
+}
+
+td {
+  font-weight: normal;
+  vertical-align: top;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  white-space: pre-line;
+  word-wrap: break-word;
+}
+
+input[type=radio] {
+  vertical-align: text-bottom;
+}
+
+input[type=checkbox] {
+  vertical-align: bottom;
+}
+
+.ie7 input[type=checkbox] {
+  vertical-align: baseline;
+}
+
+.ie6 input {
+  vertical-align: text-bottom;
+}
+
+select,
+input,
+textarea {
+  font-size: 99%;
+}
+
+small {
+  font-size: 85%;
+}
+
+strong {
+  font-weight: bold;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+.clickable,
+label,
+input[type=button],
+input[type=submit],
+input[type=file],
+button {
+  cursor: pointer;
+}
+
+button,
+input[type=button] {
+  width: auto;
+  overflow: hidden;
+}
+
+.ie7 img {
+  -ms-interpolation-mode: bicubic;
+}
+
+.clearfix::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+h1#pageHeader {
+  text-align: center;
+  font-size: 3rem;
+  color: grey;
+  padding-top: 1rem;
+}
+
+hr#headerLine {
+  width: 5rem;
+  height: 5px;
+  background-color: maroon;
+  border: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div#btnPanel {
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-around;
+}
+div#btnPanel button {
+  color: maroon;
+}
+
+#menuItems {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+#menuItems div.foodItem {
+  display: flex;
+  justify-content: space-between;
+  width: 40vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#menuItems div.foodItem .foodImg {
+  height: 20vh;
+  width: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+#menuItems div.foodItem .foodImg img {
+  width: 100%;
+  padding: 0%;
+  margin: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: maroon 2px solid;
+}
+#menuItems div.foodItem .foodInfo {
+  padding: 1rem;
+  width: 50%;
+}
+#menuItems div.foodItem .foodInfo div {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px dotted grey;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+#menuItems div.foodItem .foodInfo div h5 {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+#menuItems div.foodItem .foodInfo div h6 {
+  color: maroon;
+}
+@media only screen and (max-width: 730px) {
+  #menuItems {
+    grid-template-columns: 100%;
+  }
+  #menuItems div.foodItem {
+    width: 90vw;
+  }
+}/*# sourceMappingURL=styles.css.map */
