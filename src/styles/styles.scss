@@ -204,6 +204,10 @@ div#btnPanel {
   justify-content: space-around;
   button {
     color: maroon;
+    font-size: calc(1vh + 1vw);
+  }
+  @media only screen and (max-width: 730px) {
+    width: 90%;
   }
 }
 
@@ -212,6 +216,8 @@ div#btnPanel {
   width: 100%;
   display: grid;
   grid-template-columns: 50% 50%;
+  font-size: calc(0.75vh + 0.75vw);
+
   div.foodItem {
     display: flex;
     justify-content: space-between;
@@ -259,6 +265,8 @@ div#btnPanel {
   }
   @media only screen and (max-width: 730px) {
     grid-template-columns: 100%;
+    font-size: calc(1vh + 1vw);
+
     div.foodItem {
       width: 90vw;
     }

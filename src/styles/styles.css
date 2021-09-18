@@ -204,6 +204,12 @@ div#btnPanel {
 }
 div#btnPanel button {
   color: maroon;
+  font-size: calc(1vh + 1vw);
+}
+@media only screen and (max-width: 730px) {
+  div#btnPanel {
+    width: 90%;
+  }
 }
 
 #menuItems {
@@ -211,6 +217,7 @@ div#btnPanel button {
   width: 100%;
   display: grid;
   grid-template-columns: 50% 50%;
+  font-size: calc(0.75vh + 0.75vw);
 }
 #menuItems div.foodItem {
   display: flex;
@@ -234,8 +241,7 @@ div#btnPanel button {
   width: 100%;
   padding: 0%;
   margin: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border: maroon 2px solid;
 }
 #menuItems div.foodItem .foodInfo {
@@ -259,8 +265,11 @@ div#btnPanel button {
 @media only screen and (max-width: 730px) {
   #menuItems {
     grid-template-columns: 100%;
+    font-size: calc(1vh + 1vw);
   }
   #menuItems div.foodItem {
     width: 90vw;
   }
-}/*# sourceMappingURL=styles.css.map */
+}
+
+/*# sourceMappingURL=styles.css.map */
